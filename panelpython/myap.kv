@@ -1,0 +1,35 @@
+<MainLayout>:
+    orientation: 'horizontal'
+
+    # Sol Panel
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_x: 0.3
+        padding: 10
+        spacing: 10
+        canvas.before:
+            Color:
+                rgba: 0.2, 0.2, 0.2, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Panel"
+            font_size: 24
+
+        Button:
+            text: "Ayarlar"
+        Button:
+            text: "Hakkında"
+        Button:
+            text: "Çıkış"
+
+    # Sağ İçerik Alanı
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+
+        Label:
+            text: "İçerik Burada"
+            font_size: 32
